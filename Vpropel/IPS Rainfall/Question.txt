@@ -1,0 +1,29 @@
+IPS Rainfall
+Weather station in Chennai has recorded rainfall of n days using a rain gauge.
+Develop an algorithm and write a program to count the rainfall of the each month. 
+The value given is in cm. 
+
+SampleInput:
+
+3
+
+01-02-2021
+
+12
+
+02-02-2021
+
+15
+
+03-01-2021
+
+22
+
+Output:
+
+Jan 22
+
+Feb 27
+
+
+NOTE:- Use structure to store rain length and date.
