@@ -12,6 +12,7 @@ class Person
         {
             cout<<"I'm a person\n";
         }
+    
 };
 
 class Indian: public Person
@@ -40,7 +41,6 @@ int main()
 {
     Person *p=new Indian();
     p->fun(35);
-    delete p;
     p=new Delhi();
     p->fun(25);
     p->fun(); // no method hiding in case of virtual or pure virtual methods.
