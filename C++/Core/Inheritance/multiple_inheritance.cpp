@@ -2,7 +2,7 @@
 
 
 class Youtuber  {
-    private:
+    protected:
         int xy;
     public:
         Youtuber(int x) : xy{x}
@@ -20,7 +20,7 @@ class Youtuber  {
 
 };
 class Engineer {
-    private:
+    protected:
         int xe;
     public:
         Engineer(int x) : xe{x}
@@ -50,6 +50,10 @@ class cYpHeR: public Youtuber, public Engineer // order of constructor same
             Engineer::work();
             Youtuber::work();
         }
+        void getX()
+        {
+            std::cout<<xy<<" "<<xe<<"\n";
+        }
         
 };
 
@@ -68,5 +72,8 @@ int main()
     Engineer en=c;
     en.work();
     en.getX();
+    std::cout<<"----------------Let us do Static Casting---------------\n";
+    (static_cast<Youtuber>(c)).work();
+    c.getX();
     return 0;
 }
