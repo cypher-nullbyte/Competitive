@@ -1,0 +1,64 @@
+Dietian Program
+A dietitian in a hospital has to prepare the food-chart for the patient. Based on the  total carbohydrate, protein and fat content in the given set of food, the dietitian has  to make the suggestions. 
+Given a set of food items with the details  such as the carbohydrate-content, fat-content, protein-content, design an OOP model and develop a C++ program to find the total amount of nutrients such as 
+Carbohydrates, fats, protein, in the given set of food items. Understand the application code and provide the C++ implementation. Overload '+' operator to add the two nutrients in two food items 
+and overload [] to  return the carbohydrate-content when index is 0, return the  protein-content when the index is 1 and return the fat when index-content when the index  is 2. 
+If the index is greater than 2 then throw an integer exception.
+
+Input Format
+
+Carbohydrate in food1
+
+Protein in food1
+
+Fat in food1
+
+Carbohydrate in food2
+
+Protein in food2
+
+Fat in food2
+
+Index1 of food1 to be printed
+
+Index2 of food1 to be printed
+
+Index3 of food1 to be printed
+
+Output Format
+
+Total Carbohydrate content
+
+Total Protein content
+
+Total fat content
+
+Nutrient value of  index1  of food1
+
+Nutrient value of index2 in food1
+
+Nutrient value of index3  in  food1
+
+--------------------------------------------------------------------------
+Following Driver function (main()) is given
+
+
+int main()
+{
+	nutrients n1,n2,n3;
+	int i,j,p;
+	cin>>n1>>n2;
+	cin>>i>>j>>p;
+	n3 = n1+n2;
+	cout<<n3;
+	try
+	{
+	cout<<n1[i]<<endl;
+	cout<<n1[j]<<endl;
+	cout<<n1[p]<<endl;
+	}catch(int k)
+	{
+	cout<<"Exception Caught";
+	}
+}
+
