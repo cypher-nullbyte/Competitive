@@ -46,7 +46,7 @@ int main()
 {
     B obj;
     obj.f1(); //B
-    obj.f2(); //A 
+    obj.f2(); //B 
     obj.f2(2); //error if we comment [using A::f2;]
     obj.f2('a'); //error if we comment [using A::f2;]
 
