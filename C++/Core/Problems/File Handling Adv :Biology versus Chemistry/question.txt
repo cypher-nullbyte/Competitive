@@ -1,0 +1,66 @@
+Biology versus Chemistry
+Each subject has their own terms and each term has a weightage representing its  importance. Terms and their weightage are given in two files namely biology.txt and chemistry.txt.  A passage will   have mixed terms from both the subjects. Given a passage in an input file, determine whether it is more related to biology or chemistry. All letters in input file are in lower case. A passage is said to be more related to chemistry when the sum of weightage of chemistry terms in it is more than the sum of weightage of biology terms in it. If the passage is more related to biology then print the given passage with biology terms in upper case and if the passage is more related to chemistry then print the given passage with chemistry terms in upper case.
+
+For example biology.txt  contains the  information  as follows:
+
+plants 3
+
+tissue 4
+
+macronutrients 5
+
+micronutrients 6
+
+living 7
+
+organism 8
+
+animals 9
+
+taxon 10
+
+Chemistry.txt contains the  information as:
+
+element 2
+
+carbon 3
+
+hydrogen 4
+
+magnesium 5
+
+iron 7
+
+manganese 8
+
+copper 9
+
+nickel 10
+
+sodium 11
+
+If the input file contains the following passage “the element which are present in large amounts in plants tissue are called macronutrients they are in excess of 10 mmole per kg of dry matter carbon hydrogen and magnesium are the macronutrients END” then the expected output is
+
+Biology term count - 17
+
+Chemistry term count – 14
+
+And passage with biology terms in upper case:
+
+the element which are present in large amounts in PLANTS TISSUE are called MACRONUTRIENTS they are in excess of 10 mmole per kg of dry matter carbon hydrogen and magnesium are the MACRONUTRIENTS
+
+Input Format
+
+Name of the file with input passage
+
+Output Format
+
+Total weightage of biology terms
+
+Total weightage of chemistry terms
+
+Print original text with biology terms in upper case if biology count is greater than chemistry count and print chemistry terms in upper case otherwise
+
+NOTE: Assume that the text is sourced from chemistry or bio books separately, and there arises no condition of an equal num of chemistry and biology terms.
+
+
