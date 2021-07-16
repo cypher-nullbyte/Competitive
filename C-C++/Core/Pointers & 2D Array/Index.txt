@@ -1,0 +1,7 @@
+// 1. Single Pointer
+// 2. Using Array of Pointers
+// 3. Using Pointer to Pointer
+// 4. Using double Pointer (with one malloc/new)
+
+
+Ref: https://www.geeksforgeeks.org/dynamically-allocate-2d-array-c/
